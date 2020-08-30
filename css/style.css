@@ -1,0 +1,55 @@
+img
+{
+	width: 100%;
+	height: 100%;
+
+}
+@media screen and (orientation: portrait) {
+  .carte{
+    display: none;
+  }
+  img 
+  {
+  	width: 64px;
+  	height:64px;
+  	position: center;
+
+  	margin-left: 45%;
+  
+
+  }
+  h1
+  {
+  	text-align: center;
+  	font-size: 3.5em;
+  	font-family: 'Alata', sans-serif;
+  }
+  body
+  {
+  	background-image: url("../img/bk.png");
+  	background-size: 100%;
+
+  }
+  .avertissement
+  {
+  	background-color: white;
+  	padding-top: 5em;
+  	padding-right: 1em;
+  	padding-left: 1em;
+  	padding-bottom: 5em;
+  	
+  	margin-top: 75%;
+  	margin-bottom:  1em;
+  	margin-left : 1em;
+  	margin-right: 1em;
+  	border: 5px solid black;
+  	border-radius: 15px;
+  }
+}
+
+@media screen and (orientation: landscape) {
+	.avertissement
+	{
+		display: none;
+	}
+	}
