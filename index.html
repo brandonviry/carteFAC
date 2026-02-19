@@ -1,22 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-	<title>Carte de fac lieux important </title>
-
-	<meta charset="utf-8"/>
-	<meta name="description" content="MAPS de de l'université de St Denis "/>
-	<meta name="author" content="VIRY BRANDON " />
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Carte de fac - Lieux importants</title>
+    <meta name="description" content="Carte interactive des lieux importants de l'Université de Saint-Denis"/>
+    <meta name="author" content="VIRY Brandon"/>
+    
+    <!-- OpenLayers CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@8.2.0/ol.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-<div class="carte">
-	<img src="img/Carte-de-fac-lieux-important.svg" alt="carte">
-</div>
-<div class="avertissement">
-	<h1>TOURNER votre écran en " mode " PAYSAGE</h1>
-	<img src="img/refresh.png" alt="charge">
-	
-</div>
+    <header class="header">
+        <h1>🎓 Carte des Lieux Importants</h1>
+        <p>Université de Saint-Denis - Campus de la Faculté des Sciences</p>
+    </header>
+
+    <main class="main-container">
+        <div id="map" class="map-container"></div>
+        
+        <aside class="sidebar">
+            <div class="info-panel">
+                <h2>📍 Points d'intérêt</h2>
+                <div id="features-list" class="features-list">
+                    <p class="loading">Chargement des lieux...</p>
+                </div>
+            </div>
+            
+            <div class="legend">
+                <h3>🗺️ Légende</h3>
+                <ul>
+                    <li><span class="marker-icon blue"></span> Bâtiments universitaires</li>
+                    <li><span class="marker-icon green"></span> Espaces verts</li>
+                    <li><span class="marker-icon red"></span> Restaurants/Cafétérias</li>
+                    <li><span class="marker-icon orange"></span> Parkings</li>
+                    <li><span class="marker-icon purple"></span> Autres services</li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Avertissement orientation (désactivé par défaut - la carte fonctionne en portrait) -->
+<div class="orientation-warning" id="orientation-warning" style="display: none;">
+        <div class="warning-content">
+            <h1>📱 Mode portrait détecté</h1>
+            <p>Pour une meilleure expérience, tournez votre écran en paysage</p>
+            <img src="img/refresh.png" alt="Rotation">
+            <button onclick="dismissOrientationWarning()" style="margin-top: 1rem; padding: 0.6rem 1.2rem; background: var(--primary-color); color: white; border: none; border-radius: 6px; cursor: pointer; font-size: 0.9rem;">Continuer quand même</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 VIRY Brandon - Université de Saint-Denis</p>
+    </footer>
+
+    <!-- OpenLayers JS -->
+    <script src="https://cdn.jsdelivr.net/npm/ol@8.2.0/dist/ol.js"></script>
+    <!-- JSZip pour lire les fichiers KMZ -->
+    <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+    
+    <script src="js/map.js"></script>
+<!-- Décommenter pour le diagnostic : <script src="js/debug.js"></script> -->
 </body>
 </html>

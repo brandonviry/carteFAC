@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Carte de fac lieux important </name>
+    <description/>
+    <Style id="icon-1899-006064-labelson-nodesc">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-7.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-01579B-labelson-nodesc">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-6.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-1A237E-labelson-nodesc">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-8.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-673AB7-labelson-nodesc">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-2.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-795548-labelson-nodesc">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-9.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-7CB342-labelson-nodesc">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-5.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-AFB42B-labelson-nodesc">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-4.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-E65100-labelson-nodesc">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-3.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-FF5252-labelson-nodesc">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-1.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-FFD600-labelson-nodesc">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-10.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Folder>
+      <name>Calque sans titre</name>
+      <Placemark>
+        <name>UFR Lettres et Sciences Humaines (L1)</name>
+        <styleUrl>#icon-1899-FF5252-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            55.4827377,-20.9020914,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>UFR Droit et Economie (D1)</name>
+        <styleUrl>#icon-1899-673AB7-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            55.4839825,-20.9026219,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Université de La Réunion</name>
+        <styleUrl>#icon-1899-E65100-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            55.481468,-20.902714,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>UFR Sciences et Technologie (S1)</name>
+        <styleUrl>#icon-1899-AFB42B-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            55.4836982,-20.9015801,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Entrer principale
+</name>
+        <styleUrl>#icon-1899-7CB342-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            55.4819679,-20.9022665,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>AMPHI commerson
+</name>
+        <styleUrl>#icon-1899-01579B-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            55.4853093,-20.901412,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>AMPHI B
+</name>
+        <styleUrl>#icon-1899-006064-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            55.4852262,-20.9010111,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>AMPHI C
+</name>
+        <styleUrl>#icon-1899-1A237E-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            55.4847927,-20.9008777,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>S4B</name>
+        <styleUrl>#icon-1899-795548-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            55.4843099,-20.9010531,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>S4D</name>
+        <styleUrl>#icon-1899-FFD600-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            55.4850716,-20.9009478,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

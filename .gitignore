@@ -1,0 +1,26 @@
+# Fichiers système
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Éditeurs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Fichiers temporaires
+temp_kmz.zip
+kmz_extracted/
+*.tmp
+
+# Logs
+*.log
+
+# Node modules (si ajouté plus tard)
+node_modules/
+
+# Fichiers de build
+dist/
+build/
