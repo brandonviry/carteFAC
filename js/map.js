@@ -407,22 +407,32 @@ function showFeaturePopup(feature, coordinates) {
         ${description ? `<div class="popup-body">${description}</div>` : ''}
     `;
     
-    document.body.appendChild(popup);
+    // Ajoute le popup dans le conteneur de la carte (pas dans body)
+    const mapContainer = document.getElementById('map');
+    mapContainer.style.position = 'relative';
+    mapContainer.appendChild(popup);
     
-    // Positionne le popup
+    // Positionne le popup au-dessus du point
     const pixel = window.map.getPixelFromCoordinate(coordinates);
+    const popupHeight = popup.offsetHeight || 100;
     popup.style.left = `${pixel[0]}px`;
-    popup.style.top = `${pixel[1] - 20}px`;
+    popup.style.top = `${pixel[1] - 15}px`;
+    popup.style.transform = 'translate(-50%, -100%)';
     
     // Ferme le popup au clic sur le bouton
-    popup.querySelector('.popup-close').addEventListener('click', () => popup.remove());
-    
-    // Ferme le popup au clic sur la carte
-    const closeOnClick = () => {
+    popup.querySelector('.popup-close').addEventListener('click', (e) => {
+        e.stopPropagation();
         popup.remove();
-        window.map.un('click', closeOnClick);
+    });
+    
+    // Ferme le popup au clic sur la carte (pas sur le popup)
+    const closeOnClick = (e) => {
+        popup.remove();
     };
-    setTimeout(() => window.map.once('click', closeOnClick), 100);
+    
+    setTimeout(() => {
+        window.map.once('click', closeOnClick);
+    }, 10);
 }
 
 /**

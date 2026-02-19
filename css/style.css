@@ -390,13 +390,12 @@ body {
     min-width: 200px;
     max-width: min(320px, 90vw);
     z-index: 1000;
-    transform: translate(-50%, -100%);
     animation: popupIn 0.2s ease;
-    margin-top: -10px;
+    pointer-events: auto;
 }
 
 @keyframes popupIn {
-    from { opacity: 0; transform: translate(-50%, -90%); }
+    from { opacity: 0; transform: translate(-50%, -95%); }
     to { opacity: 1; transform: translate(-50%, -100%); }
 }
 
@@ -462,14 +461,6 @@ body {
     .custom-popup {
         min-width: 180px;
         max-width: 85vw;
-        left: 50% !important;
-        transform: translateX(-50%);
-        animation: popupInMobile 0.2s ease;
-    }
-    
-    @keyframes popupInMobile {
-        from { opacity: 0; transform: translateX(-50%) translateY(-10px); }
-        to { opacity: 1; transform: translateX(-50%) translateY(0); }
     }
 }
 
